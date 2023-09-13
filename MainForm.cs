@@ -20,6 +20,9 @@ namespace DontLetMeSleep
 
             // Set the initial value of the custom interval TextBox
             CustomIntervalTextBox.Text = intervalSeconds.ToString();
+
+            // Autostart the simulation
+            StartStopCheckBox.Checked = true;
         }
         private void StartStopCheckBox_CheckedChanged(object sender, EventArgs e)
         {
@@ -31,12 +34,12 @@ namespace DontLetMeSleep
             if (isSimulationRunning)
             {
                 StartSimulation();
-                StartStopCheckBox.Image = Resources.STOP_BUTTON; // Change the button image to STOP
+                StartStopCheckBox.Image = Resources.START_BUTTON; // Change the button image to START
             }
             else
             {
                 StopSimulation();
-                StartStopCheckBox.Image = Resources.START_BUTTON; // Change the button image to START
+                StartStopCheckBox.Image = Resources.STOP_BUTTON; // Change the button image to STOP
             }
         }
 
@@ -71,8 +74,7 @@ namespace DontLetMeSleep
 
         private void UpdateCountdownLabel(int seconds)
         {
-            //CountdownLabel.Text = $"Next F16 key press in {seconds} seconds...";
-            //CountdownLabel.Text = $"Key press in {seconds} seconds...";
+            // Update countdown progress
             ToolStripProgressBar1.Value = seconds;
             ToolStripStatusLabel1.Text = seconds.ToString()+"s";
         }
