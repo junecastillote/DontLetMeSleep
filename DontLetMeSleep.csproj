@@ -33,11 +33,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>LIGHT_BULB.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\START_BUTTON_ICON.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>DontLetMeSleep.Program</StartupObject>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -94,6 +95,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="LIGHT_BULB.ico" />
+    <None Include="Resources\START_BUTTON_ICON.ico" />
+    <None Include="Resources\STOP_BUTTON_ICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

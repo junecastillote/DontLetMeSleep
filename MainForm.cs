@@ -35,11 +35,13 @@ namespace DontLetMeSleep
             {
                 StartSimulation();
                 StartStopCheckBox.Image = Resources.START_BUTTON; // Change the button image to START
+                this.Icon = Resources.START_BUTTON_ICON;
             }
             else
             {
                 StopSimulation();
                 StartStopCheckBox.Image = Resources.STOP_BUTTON; // Change the button image to STOP
+                this.Icon = Resources.STOP_BUTTON_ICON;
             }
         }
 
