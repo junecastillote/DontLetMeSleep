@@ -94,7 +94,6 @@
     <None Include="Resources\START_BUTTON.png" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="LIGHT_BULB.ico" />
     <None Include="Resources\START_BUTTON_ICON.ico" />
     <None Include="Resources\STOP_BUTTON_ICON.ico" />
   </ItemGroup>
